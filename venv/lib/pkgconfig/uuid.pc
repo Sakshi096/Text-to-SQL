@@ -1,0 +1,11 @@
+prefix=/home/sakshi/Documents/Text-to-SQL/venv
+exec_prefix=/home/sakshi/Documents/Text-to-SQL/venv
+libdir=/home/sakshi/Documents/Text-to-SQL/venv/lib
+includedir=/home/sakshi/Documents/Text-to-SQL/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

@@ -1,0 +1,13 @@
+prefix=/home/sakshi/Documents/Text-to-SQL/venv
+exec_prefix=/home/sakshi/Documents/Text-to-SQL/venv
+libdir=/home/sakshi/Documents/Text-to-SQL/venv/lib
+sharedlibdir=/home/sakshi/Documents/Text-to-SQL/venv/lib
+includedir=/home/sakshi/Documents/Text-to-SQL/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
