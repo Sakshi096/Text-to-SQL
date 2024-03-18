@@ -5,7 +5,7 @@ connection=sqlite3.connect("student.db")
 
 # Creating a cursor object using the  
 # cursor() method 
-cursor = conn.cursor() 
+cursor = connection.cursor() 
   
 # Creating table 
 table ="""CREATE TABLE STUDENT(NAME VARCHAR(255), CLASS VARCHAR(255), 
@@ -13,10 +13,10 @@ SECTION VARCHAR(255));"""
 cursor.execute(table) 
   
 # Queries to INSERT records. 
-cursor.execute('''INSERT INTO STUDENT VALUES ('Krish', 'Data Science', 'A')''') 
-cursor.execute('''INSERT INTO STUDENT VALUES ('Darius', 'Data Science', 'B')''') 
-cursor.execute('''INSERT INTO STUDENT VALUES ('Sudhanshu', 'Devops', 'C')''') 
-cursor.execute('''INSERT INTO STUDENT VALUES ('Vikash', 'Data Science', 'C')''') 
+cursor.execute('''INSERT INTO STUDENT VALUES ('Sakshi', 'Data Science', 'A')''') 
+cursor.execute('''INSERT INTO STUDENT VALUES ('Nithya', 'Data Science', 'B')''') 
+cursor.execute('''INSERT INTO STUDENT VALUES ('Soumya', 'Devops', 'C')''') 
+cursor.execute('''INSERT INTO STUDENT VALUES ('Taran', 'Data Science', 'C')''') 
   
 # Display data inserted 
 print("Data Inserted in the table: ") 
@@ -25,7 +25,7 @@ for row in data:
     print(row) 
   
 # Commit your changes in the database     
-conn.commit() 
+connection.commit() 
   
 # Closing the connection 
-conn.close()
+connection.close()
